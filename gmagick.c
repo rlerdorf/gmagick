@@ -576,12 +576,6 @@ ZEND_BEGIN_ARG_INFO_EX(gmagick_newimage_args, 0, 0, 3)
 	ZEND_ARG_INFO(0, format)
 ZEND_END_ARG_INFO() 
 
-ZEND_BEGIN_ARG_INFO_EX(gmagick_newpseudoimage_args, 0, 0, 3)
- 	ZEND_ARG_INFO(0, columns)
- 	ZEND_ARG_INFO(0, rows)
- 	ZEND_ARG_INFO(0, pseudoString)
-ZEND_END_ARG_INFO() 
-
 ZEND_BEGIN_ARG_INFO_EX(gmagick_getresourcelimit_args, 0, 0, 1)
 	ZEND_ARG_INFO(0, resource_type)
 ZEND_END_ARG_INFO()
@@ -593,14 +587,6 @@ ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(gmagick_normalizeimage_args, 0, 0, 0)
 	ZEND_ARG_INFO(0, CHANNEL)
-ZEND_END_ARG_INFO()
-
-ZEND_BEGIN_ARG_INFO_EX(gmagick_oilpaintimage_args, 0, 0, 1)
-	ZEND_ARG_INFO(0, radius)
-ZEND_END_ARG_INFO()
-
-ZEND_BEGIN_ARG_INFO_EX(gmagick_previewimages_args, 0, 0, 1)
-	ZEND_ARG_INFO(0, PREVIEW)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(gmagick_profileimage_args, 0, 0, 2)
@@ -622,10 +608,6 @@ ZEND_BEGIN_ARG_INFO_EX(gmagick_quantizeimages_args, 0, 0, 5)
 	ZEND_ARG_INFO(0, treeDepth)
 	ZEND_ARG_INFO(0, dither)
 	ZEND_ARG_INFO(0, measureError)
-ZEND_END_ARG_INFO()
-
-ZEND_BEGIN_ARG_INFO_EX(gmagick_queryfonts_args, 0, 0, 1)
-	ZEND_ARG_INFO(0, pattern)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(gmagick_queryfontmetrics_args, 0, 0, 2)
@@ -723,11 +705,6 @@ ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(gmagick_whitethresholdimage_args, 0, 0, 1)
 	ZEND_ARG_INFO(0, color)
-ZEND_END_ARG_INFO()
-
-ZEND_BEGIN_ARG_INFO_EX(gmagick_writeimages_args, 0, 0, 2)
-	ZEND_ARG_INFO(0, filename)
-	ZEND_ARG_INFO(0, adjoin)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(gmagick_sampleimage_args, 0, 0, 2)
