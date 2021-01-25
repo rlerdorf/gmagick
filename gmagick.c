@@ -1747,6 +1747,10 @@ PHP_MINIT_FUNCTION(gmagick)
 */
 PHP_MSHUTDOWN_FUNCTION(gmagick)
 {
+#ifndef HAVE_OMP_PAUSE_RESOURCE_ALL
+	int i;
+#endif
+
 	DestroyMagick();
 #if HAVE_OMP_PAUSE_RESOURCE_ALL
 	// Note there is a patch to add omp_pause_resource_all to DestroyMagick()
