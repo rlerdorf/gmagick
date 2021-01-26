@@ -4546,7 +4546,7 @@ PHP_METHOD(gmagick, unsharpmaskimage)
 	if (php_gmagick_ensure_not_empty (intern->magick_wand) == 0)
 		return;
 
-		status = MagickUnsharpMaskImage(intern->magick_wand, radius, sigma, amount, threshold);
+	status = MagickUnsharpMaskImage(intern->magick_wand, radius, sigma, amount, threshold);
 
 	if (status == MagickFalse) {
 			GMAGICK_THROW_GMAGICK_EXCEPTION(intern->magick_wand, "Unable to unsharp mask image");		
